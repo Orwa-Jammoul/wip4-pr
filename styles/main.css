@@ -1,0 +1,15 @@
+*{
+  font-family: "Poppins", 'Times New Roman', Times, serif;
+  font-weight: 900;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: chocolate; */
+}
+
+.nav-link{
+  text-decoration: none;
+  color: black;
+}
