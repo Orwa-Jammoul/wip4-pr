@@ -7,6 +7,12 @@ body{
   padding: 0;
 }
 
+:root{
+  --primary: rgb(254, 236, 138);
+  --secondary: rgb(246, 246,246);
+  --gray: rgb(147, 147, 147);
+}
+
 .nav-links{
   display: flex;
   justify-content: space-between;
@@ -45,4 +51,10 @@ body{
   width: 100%;
   z-index: 1000;
   background-color: white;
+}
+
+.fcc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
