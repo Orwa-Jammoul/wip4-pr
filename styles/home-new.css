@@ -1,0 +1,27 @@
+.section-deals-of-the-day {
+  padding: 2rem 4rem;
+}
+.section-deals-of-the-day .section-header .section-title {
+  color: black;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+.section-deals-of-the-day .section-header .section-des {
+  margin: 0;
+  color: var(--gray);
+}
+.section-deals-of-the-day .deals-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 10rem;
+  height: 20rem;
+  grid-gap: 1rem;
+}
+.section-deals-of-the-day .deals-container .deal {
+  border: solid 1px black;
+  background-color: burlywood;
+  border-radius: 1rem;
+}
+.section-deals-of-the-day .deals-container .deal:first-child, .section-deals-of-the-day .deals-container .deal:last-child {
+  grid-column: span 2;
+}/*# sourceMappingURL=home-new.css.map */
