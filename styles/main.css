@@ -6,106 +6,205 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
   --primary: rgb(254, 236, 138);
   --secondary: rgb(246, 246, 246);
-  --gray: rgb(147, 147, 147);
-  --gray-light: rgb(246, 246, 246);
+  --gray: #8c8c8c;
+  --gray-light: rgb(248, 247, 250);
+  --link-gray: #868687;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.rp {
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
 }
 
 .navbar-container {
-  padding-bottom: 1.7rem;
-  position: sticky;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 1000;
   background-color: white;
 }
-.navbar-container .nav-top .nav-top-link {
-  text-decoration: none;
-  color: var(--bs-gray-500);
+.navbar-container .nav-contact {
+  padding: 1.6rem 0;
 }
-.navbar-container .nav-link {
+.navbar-container .nav-contact .nav-top-link, .navbar-container .nav-contact span {
+  font-size: 13px;
+  font-weight: 400;
   text-decoration: none;
-  color: black;
+  color: var(--gray);
+  text-transform: capitalize;
 }
-.navbar-container .search-navbar {
+.navbar-container .nav-pages {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--gray-light);
+}
+.navbar-container .nav-pages .left,
+.navbar-container .nav-pages .right {
+  display: flex;
+}
+.navbar-container .nav-pages .left .nav-link,
+.navbar-container .nav-pages .right .nav-link {
+  margin-right: 1rem;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--link-gray);
+  text-transform: uppercase;
+}
+.navbar-container .nav-pages .left .nav-link:last-child,
+.navbar-container .nav-pages .right .nav-link:last-child {
+  margin-right: 0;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  padding-top: 1.7rem;
+}
+.sticky-nav .nav-search {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 3rem;
   margin-bottom: 1rem;
-  padding: 0 2rem;
 }
-.navbar-container .search-navbar .logo-container {
-  width: 25%;
+.sticky-nav .nav-search .logo-container {
+  width: 20%;
   height: 100%;
+  padding-inline-end: 2rem;
 }
-.navbar-container .search-navbar .logo-container .shop-logo {
-  width: auto;
+.sticky-nav .nav-search .logo-container .shop-logo {
+  width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.navbar-container .search-navbar .search-bar {
-  width: 50%;
-  background-color: rgba(180, 176, 176, 0.349);
-  border: solid 3px gray;
-  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+.sticky-nav .nav-search .search-bar {
+  position: relative;
+  width: 60%;
+  height: 2.7rem;
+}
+.sticky-nav .nav-search .search-bar .input-field {
+  width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  border-radius: 1.5rem;
+  border: solid 1px rgba(128, 128, 128, 0.4);
+  background-color: var(--gray-light);
+  padding: 0 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 400;
 }
-.navbar-container .search-navbar .search-bar .search-icon {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  font-size: 1.3rem;
+.sticky-nav .nav-search .search-bar .input-field::-moz-placeholder {
+  color: var(--link-gray);
 }
-.navbar-container .search-navbar .search-bar .search-dis {
-  color: rgb(133, 133, 133);
-  margin-bottom: 0;
+.sticky-nav .nav-search .search-bar .input-field::placeholder {
+  color: var(--link-gray);
 }
-.navbar-container .search-navbar .search-bar-icons {
+.sticky-nav .nav-search .search-bar .icon-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.7rem;
+  height: 2.7rem;
+}
+.sticky-nav .nav-search .search-bar .icon-frame .search-icon {
+  font-size: 1rem;
+  z-index: 2;
+}
+.sticky-nav .nav-search .search-bar-icons {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 25%;
-  color: var(--gray);
+  width: 20%;
+  color: black;
 }
-.navbar-container .search-navbar .search-bar-icons .search-icon {
+.sticky-nav .nav-search .search-bar-icons .search-icon {
   margin-right: 1rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
-.navbar-container .nav-links1 {
+.sticky-nav .nav-search .search-bar-icons .signin {
+  font-size: 13px;
+  font-weight: 400;
+  color: black;
+}
+.sticky-nav .nav-categories {
   display: flex;
   justify-content: space-between;
-  padding: 10px 40px;
-  background-color: rgb(243, 243, 243);
-  margin-bottom: 1.7rem;
+  padding-bottom: 1rem;
+  /* background-color: chocolate; */
 }
-.navbar-container .nav-links1 .left,
-.navbar-container .nav-links1 .right {
-  display: flex;
+.sticky-nav .nav-categories .nav-link-box {
+  position: relative;
+  margin-right: 1rem;
 }
-.navbar-container .nav-links1 .left .nav-link,
-.navbar-container .nav-links1 .right .nav-link {
-  margin-right: 10px;
-  color: rgb(98, 98, 98);
-}
-.navbar-container .nav-links1 .left .nav-link:last-child,
-.navbar-container .nav-links1 .right .nav-link:last-child {
+.sticky-nav .nav-categories .nav-link-box:last-child {
   margin-right: 0;
 }
-.navbar-container .nav-links {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 40px;
-  /* background-color: chocolate; */
+.sticky-nav .nav-categories .nav-link-box .nav-link {
+  font-size: 13px;
+  font-weight: 500;
+  color: black;
+  text-transform: capitalize;
+}
+.sticky-nav .nav-categories .nav-link-box .nav-dropdown-menu {
+  position: absolute;
+  top: 99%;
+  left: 0;
+  min-width: 10rem;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+  transform: translateY(5px);
+}
+.sticky-nav .nav-categories .nav-link-box .nav-dropdown-menu .nav-menu-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 13px;
+  transition: all 300ms ease-in-out;
+}
+.sticky-nav .nav-categories .nav-link-box .nav-dropdown-menu .nav-menu-link:hover {
+  background-color: var(--gray-light);
+  padding-inline-start: 1.5rem;
+}
+.sticky-nav .nav-categories .nav-link-box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  height: 2px;
+  background-color: chocolate;
+  transition: all 300ms ease-in-out;
+}
+.sticky-nav .nav-categories .nav-link-box:hover .nav-link {
+  color: chocolate;
+}
+.sticky-nav .nav-categories .nav-link-box:hover::after {
+  left: 0;
+  right: 0;
+}
+.sticky-nav .nav-categories .nav-link-box:hover .nav-dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .fcc {

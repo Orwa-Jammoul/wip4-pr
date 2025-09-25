@@ -9,12 +9,118 @@
   <title>All Products</title>
 </head>
 <body>
-  <div class="products">
+  <div class="navbar-container">
+    <div class="nav-contact fcc">
+      <a class="nav-top-link">sell with us</a>
+      <span class="mx-2">|</span>
+      <a class="nav-top-link">contact</a>
+      <span class="mx-2">|</span>
+      <a class="nav-top-link me-3">dawnload app </a>
+      <a class="nav-top-link me-3"><i class="bi bi-android2"></i></a>
+      <a class="nav-top-link me-3"><i class="bi bi-apple"></i></a>
+      <a class="nav-top-link me-3"><i class="bi bi-windows"></i></a>
+    </div>
+    <div class="nav-pages rp">
+      <!-- <a id="link001" class="nav-link" href="./all-products.html">men</a> -->
+      <div class="left">
+        <a class="nav-link red" href="./all-products.html">mobiles & more</a>
+        <a class="nav-link" href="./all-products.html">men</a>
+        <a class="nav-link" href="./all-products.html">women</a>
+        <a class="nav-link" href="./all-products.html">appliances</a>
+      </div>
+      <div class="right">
+        <a class="nav-link" href="./all-products.html">sport & more</a>
+        <a class="nav-link" href="./all-products.html">essentials</a>
+        <a class="nav-link" href="./all-products.html">offers</a>
+        <a class="nav-link" href="./all-products.html">global shopping</a>
+      </div>
+    </div>
+  </div>
+  <div class="sticky-nav">
+    <div class="nav-search rp">
+      <a class="logo-container" href="/index.html">
+        <img
+          src="./assets/logo/shopclues-logo.png"
+          class="shop-logo"
+          alt=""
+        />
+      </a>
+
+      <div class="search-bar">
+        <input
+          class="input-field"
+          type="text"
+          placeholder="Search all Categories"
+        />
+        <div class="icon-frame fcc">
+          <i class="bi bi-search search-icon"></i>
+        </div>
+      </div>
+
+      <div class="search-bar-icons">
+        <i class="bi bi-geo-alt search-icon"></i>
+        <i class="bi bi-bell-fill search-icon"></i>
+        <i class="bi bi-suit-heart-fill search-icon"></i>
+        <i class="bi bi-cart3 search-icon"></i>
+        <a class="signin" href="./all-products.html">Sign In</a>
+      </div>
+    </div>
+    <div class="nav-categories rp">
+      <div class="nav-link-box">
+        <a class="nav-link" href="./all-products.html">
+          All Products
+          <i class="bi bi-caret-down-fill ms-1"></i>
+        </a>
+        <div class="nav-dropdown-menu">
+          <a class="nav-menu-link" href="./all-products.html">menu link</a>
+          <a class="nav-menu-link" href="./all-products.html">menu link</a>
+          <a class="nav-menu-link" href="./all-products.html">menu link</a>
+          <a class="nav-menu-link" href="./all-products.html">menu link</a>
+          <a class="nav-menu-link" href="./all-products.html">menu link</a>
+          <a class="nav-menu-link" href="./all-products.html">menu link</a>
+        </div>
+      </div>
+
+      <div class="nav-link-box">
+        <a class="nav-link" href="./all-products.html">
+          All Fashion
+          <i class="bi bi-caret-down-fill ms-1"></i>
+        </a>
+        <div class="nav-dropdown-menu">
+          <a class="nav-menu-link" href="./all-products.html">menu link</a>
+          <a class="nav-menu-link" href="./all-products.html">menu link</a>
+          <a class="nav-menu-link" href="./all-products.html">menu link</a>
+          <a class="nav-menu-link" href="./all-products.html">menu link</a>
+          <a class="nav-menu-link" href="./all-products.html">menu link</a>
+          <a class="nav-menu-link" href="./all-products.html">menu link</a>
+        </div>
+      </div>
+      <div class="nav-link-box">
+        <a class="nav-link" href="./all-products.html"> Footwear </a>
+      </div>
+      <div class="nav-link-box">
+        <a class="nav-link" href="./all-products.html">refurbished mobile</a>
+      </div>
+      <div class="nav-link-box">
+        <a class="nav-link" href="./all-products.html">express shipping</a>
+      </div>
+      <div class="nav-link-box">
+        <a class="nav-link" href="./all-products.html">jaw dropping deals</a>
+      </div>
+      <div class="nav-link-box">
+        <a class="nav-link" href="./all-products.html">kitchen & dinning</a>
+      </div>
+      <div class="nav-link-box">
+        <a class="nav-link" href="./all-products.html">audio & headphones</a>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="products">
     <div class="product-item">product</div>
     <div class="product-item">product</div>
     <div class="product-item">product</div>
     <div class="product-item active">product</div>
-  </div>
+  </div> -->
 
   <!-- <div class="items-container d-none">
     <div class="item item-1"></div>
@@ -23,7 +129,7 @@
     <div class="item item-4"></div>
   </div> -->
 
-  <div class="test container-fluid"> 
+  <!-- <div class="test container-fluid"> 
     <div class="row">
       <div class="card-col col-12 col-lg-3 col-md-8 ">
         card
@@ -39,6 +145,61 @@
       </div>
     </div>
     
-  </div>
+  </div> -->
+
+  <form action="/index.html" method="post" class="inputs p-5 d-flex flex-column">
+
+    <label for="firstName">First Name</label>
+    <input type="text" name="fname" id="firstName"  placeholder="samer">
+    
+    <label for="lastName">Last Name</label>
+    <input type="text" name="lname" id="lastName" >
+
+    <label for="email">email</label>
+    <input type="email" name="email" id="email" >
+
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" >
+
+    <label for="birthday">birthday</label>
+    <input type="datetime-local" id="birthday">
+    
+    <label for="mobile">mobile</label>
+    <input type="phone" id="mobile"  placeholder="+963 9999999">
+    
+    <label for="age">age</label>
+    <input type="number" id="age">
+    
+    <label >categories of products</label>
+
+    <label for="cat1">category 1</label>
+    <input type="checkbox" name="category" id="cat1" c>
+    <label for="cat2">category 2</label>
+    <input type="checkbox" name="category" id="cat2" value="2">
+    <label for="cat3">category 3</label>
+    <input type="checkbox" name="category" id="cat3" value="3">
+    <label for="cat4">category 4</label>
+    <input type="checkbox" name="category" id="cat4" value="4">
+
+
+    <label>year 1</label>
+    <label for="year1">year 1</label>
+    <input type="radio" name="year" id="year1" value="1">
+    <label for="year2">year 2</label>
+    <input type="radio" name="year" id="year2" value="2">
+
+    <label for="gender">year 2</label>
+    <select name="gender" id="gender">
+      <option value="male">male</option>
+      <option value="female">female</option>
+    </select>
+
+    <input class="mt-5" type="submit">
+    <input class="mt-5" type="reset">
+
+  </form>
+
+
+
 </body>
 </html>

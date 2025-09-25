@@ -26,15 +26,17 @@
   </head>
   <body>
     <div class="navbar-container">
-      <div class="nav-top fcc py-3">
-        <a class="nav-top-link me-3">sell with us: | </a>
-        <a class="nav-top-link me-3">contact: | </a>
-        <a class="nav-top-link me-3">dawnload app: </a>
+      <div class="nav-contact fcc">
+        <a class="nav-top-link">sell with us</a>
+        <span class="mx-2">|</span>
+        <a class="nav-top-link">contact</a>
+        <span class="mx-2">|</span>
+        <a class="nav-top-link me-3">dawnload app </a>
         <a class="nav-top-link me-3"><i class="bi bi-android2"></i></a>
         <a class="nav-top-link me-3"><i class="bi bi-apple"></i></a>
         <a class="nav-top-link me-3"><i class="bi bi-windows"></i></a>
       </div>
-      <div class="nav-links1">
+      <div class="nav-pages rp">
         <!-- <a id="link001" class="nav-link" href="./all-products.html">men</a> -->
         <div class="left">
           <a class="nav-link red" href="./all-products.html">mobiles & more</a>
@@ -49,55 +51,103 @@
           <a class="nav-link" href="./all-products.html">global shopping</a>
         </div>
       </div>
-      <div class="search-navbar">
-        <div class="logo-container">
+    </div>
+    <div class="sticky-nav">
+      <div class="nav-search rp">
+        <a class="logo-container" href="/index.html">
           <img
             src="./assets/logo/shopclues-logo.png"
             class="shop-logo"
             alt=""
           />
-        </div>
+        </a>
+
         <div class="search-bar">
-          <i class="bi bi-search search-icon"></i>
-          <!-- <p class="search-dis">type here</p> -->
-          <span class="search-dis">type here</span>
+          <input
+            class="input-field"
+            type="text"
+            placeholder="Search all Categories"
+          />
+          <div class="icon-frame fcc">
+            <i class="bi bi-search search-icon"></i>
+          </div>
         </div>
+
         <div class="search-bar-icons">
           <i class="bi bi-geo-alt search-icon"></i>
           <i class="bi bi-bell-fill search-icon"></i>
           <i class="bi bi-suit-heart-fill search-icon"></i>
           <i class="bi bi-cart3 search-icon"></i>
-          <a href="./all-products.html">Sign In</a>
+          <a class="signin" href="./all-products.html">Sign In</a>
         </div>
       </div>
-      <div class="nav-links">
-        <a class="nav-link" href="./all-products.html">All Products</a>
-        <a class="nav-link" href="./all-products.html">All Fashion</a>
-        <a class="nav-link" href="./all-products.html">Footwear</a>
-        <a class="nav-link" href="./all-products.html">refurbished mobile</a>
-        <a class="nav-link" href="./all-products.html">express shipping</a>
-        <a class="nav-link" href="./all-products.html">jaw dropping deals</a>
-        <a class="nav-link" href="./all-products.html">kitchen & dinning</a>
-        <a class="nav-link" href="./all-products.html">audio & headphones</a>
+      <div class="nav-categories rp">
+        <div class="nav-link-box">
+          <a class="nav-link" href="./all-products.html">
+            All Products
+            <i class="bi bi-caret-down-fill ms-1"></i>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a class="nav-menu-link" href="./all-products.html">menu link</a>
+            <a class="nav-menu-link" href="./all-products.html">menu link</a>
+            <a class="nav-menu-link" href="./all-products.html">menu link</a>
+            <a class="nav-menu-link" href="./all-products.html">menu link</a>
+            <a class="nav-menu-link" href="./all-products.html">menu link</a>
+            <a class="nav-menu-link" href="./all-products.html">menu link</a>
+          </div>
+        </div>
+
+        <div class="nav-link-box">
+          <a class="nav-link" href="./all-products.html">
+            All Fashion
+            <i class="bi bi-caret-down-fill ms-1"></i>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a class="nav-menu-link" href="./all-products.html">menu link</a>
+            <a class="nav-menu-link" href="./all-products.html">menu link</a>
+            <a class="nav-menu-link" href="./all-products.html">menu link</a>
+            <a class="nav-menu-link" href="./all-products.html">menu link</a>
+            <a class="nav-menu-link" href="./all-products.html">menu link</a>
+            <a class="nav-menu-link" href="./all-products.html">menu link</a>
+          </div>
+        </div>
+        <div class="nav-link-box">
+          <a class="nav-link" href="./all-products.html"> Footwear </a>
+        </div>
+        <div class="nav-link-box">
+          <a class="nav-link" href="./all-products.html">refurbished mobile</a>
+        </div>
+        <div class="nav-link-box">
+          <a class="nav-link" href="./all-products.html">express shipping</a>
+        </div>
+        <div class="nav-link-box">
+          <a class="nav-link" href="./all-products.html">jaw dropping deals</a>
+        </div>
+        <div class="nav-link-box">
+          <a class="nav-link" href="./all-products.html">kitchen & dinning</a>
+        </div>
+        <div class="nav-link-box">
+          <a class="nav-link" href="./all-products.html">audio & headphones</a>
+        </div>
       </div>
     </div>
-    <div class="img-frame">
+    <div class="header-hero">
       <img src="./assets/hero-01.jpg" alt="header-hero" />
-      <div class="header-content">
+      <div class="header-hero-content rp">
         <button class="btn-discount">WEEKEND DISCOUNT</button>
         <h1 class="header-title">best deals endless deals</h1>
-        <p>
+        <p class="description">
           discover the best deals across endless option.
           <br />
           offering quality and ubeatable variety daily.
         </p>
-        <button>explore deals</button>
+        <button class="btn-explore">explore deals</button>
       </div>
     </div>
 
-    <section class="products-section">
+    <section class="products-section rp">
       <div class="section-header">
-        <h1>brands deals</h1>
+        <h1>branded deals</h1>
         <a href="./all-products.html"> View All</a>
       </div>
       <div class="products-cards-container">
@@ -115,15 +165,15 @@
               <i class="icon bi bi-star-fill"></i>
               4.5 (21K)
             </p>
-            <h1 class="title">Lorem ipsum dolor sit.</h1>
+            <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur </h1>
             <p class="price">
               $12.00 <span class="old-price">$13.00</span> 6% off
             </p>
           </div>
         </a>
-        <div class="product-card">
+        <a class="product-card" href="./all-products.html">
           <div class="top">
-            <img src="./assets/products/Layer 17.png" alt="image" />
+            <img src="./assets/products/Layer 16.png" alt="image" />
             <div class="white-cut fcc">
               <div class="circle fcc">
                 <i class="icon bi bi-cart3"></i>
@@ -135,15 +185,15 @@
               <i class="icon bi bi-star-fill"></i>
               4.5 (21K)
             </p>
-            <h1 class="title">Lorem ipsum dolor sit.</h1>
+            <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur </h1>
             <p class="price">
               $12.00 <span class="old-price">$13.00</span> 6% off
             </p>
           </div>
-        </div>
-        <div class="product-card">
+        </a>
+        <a class="product-card" href="./all-products.html">
           <div class="top">
-            <img src="./assets/products/Layer 17.png" alt="image" />
+            <img src="./assets/products/Layer 15.png" alt="image" />
             <div class="white-cut fcc">
               <div class="circle fcc">
                 <i class="icon bi bi-cart3"></i>
@@ -155,15 +205,15 @@
               <i class="icon bi bi-star-fill"></i>
               4.5 (21K)
             </p>
-            <h1 class="title">Lorem ipsum dolor sit.</h1>
+            <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur </h1>
             <p class="price">
               $12.00 <span class="old-price">$13.00</span> 6% off
             </p>
           </div>
-        </div>
-        <div class="product-card">
+        </a>
+        <a class="product-card" href="./all-products.html">
           <div class="top">
-            <img src="./assets/products/Layer 17.png" alt="image" />
+            <img src="./assets/products/Layer 14.png" alt="image" />
             <div class="white-cut fcc">
               <div class="circle fcc">
                 <i class="icon bi bi-cart3"></i>
@@ -175,16 +225,105 @@
               <i class="icon bi bi-star-fill"></i>
               4.5 (21K)
             </p>
-            <h1 class="title">Lorem ipsum dolor sit.</h1>
+            <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur </h1>
             <p class="price">
               $12.00 <span class="old-price">$13.00</span> 6% off
             </p>
           </div>
-        </div>
+        </a>
       </div>
     </section>
 
-    <section class="section-deals-of-the-day">
+    <section class="products-section rp">
+      <div class="section-header">
+        <h1>clothing</h1>
+        <a href="./all-products.html"> View All</a>
+      </div>
+      <div class="products-cards-container">
+        <a class="product-card" href="./all-products.html">
+          <div class="top">
+            <img src="./assets/products/Layer 17.png" alt="image" />
+            <div class="white-cut fcc">
+              <div class="circle fcc">
+                <i class="icon bi bi-cart3"></i>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <p class="review">
+              <i class="icon bi bi-star-fill"></i>
+              4.5 (21K)
+            </p>
+            <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur </h1>
+            <p class="price">
+              $12.00 <span class="old-price">$13.00</span> 6% off
+            </p>
+          </div>
+        </a>
+        <a class="product-card" href="./all-products.html">
+          <div class="top">
+            <img src="./assets/products/Layer 16.png" alt="image" />
+            <div class="white-cut fcc">
+              <div class="circle fcc">
+                <i class="icon bi bi-cart3"></i>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <p class="review">
+              <i class="icon bi bi-star-fill"></i>
+              4.5 (21K)
+            </p>
+            <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur </h1>
+            <p class="price">
+              $12.00 <span class="old-price">$13.00</span> 6% off
+            </p>
+          </div>
+        </a>
+        <a class="product-card" href="./all-products.html">
+          <div class="top">
+            <img src="./assets/products/Layer 15.png" alt="image" />
+            <div class="white-cut fcc">
+              <div class="circle fcc">
+                <i class="icon bi bi-cart3"></i>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <p class="review">
+              <i class="icon bi bi-star-fill"></i>
+              4.5 (21K)
+            </p>
+            <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur </h1>
+            <p class="price">
+              $12.00 <span class="old-price">$13.00</span> 6% off
+            </p>
+          </div>
+        </a>
+        <a class="product-card" href="./all-products.html">
+          <div class="top">
+            <img src="./assets/products/Layer 14.png" alt="image" />
+            <div class="white-cut fcc">
+              <div class="circle fcc">
+                <i class="icon bi bi-cart3"></i>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <p class="review">
+              <i class="icon bi bi-star-fill"></i>
+              4.5 (21K)
+            </p>
+            <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur </h1>
+            <p class="price">
+              $12.00 <span class="old-price">$13.00</span> 6% off
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-deals-of-the-day rp">
       <div class="section-header">
         <h1 class="section-title">Deals of the day</h1>
         <p class="section-des">
@@ -193,75 +332,216 @@
         </p>
       </div>
       <div class="deals-container">
-        <div class="deal deal-1"></div>
-        <div class="deal deal-2"></div>
-        <div class="deal deal-3"></div>
-        <div class="deal deal-4"></div>
-        <div class="deal deal-5"></div>
-        <div class="deal deal-6"></div>
+        <div class="deal deal-1">
+          <img src="./assets/products/Layer 14.png" alt="image" />
+        </div>
+        <div class="deal deal-2">
+          <img src="./assets/products/Layer 13.png" alt="image" />
+        </div>
+        <div class="deal deal-3">
+          <img src="./assets/products/Layer 12.png" alt="image" />
+        </div>
+        <div class="deal deal-4">
+          <img src="./assets/products/Layer 11.png" alt="image" />
+        </div>
+        <div class="deal deal-5">
+          <img src="./assets/products/Layer 10.png" alt="image" />
+        </div>
+        <div class="deal deal-6">
+          <img src="./assets/products/Layer 9.png" alt="image" />
+        </div>
       </div>
     </section>
 
-    <section class="customer">
-      <div class="customer-title">
-        <p>WHATS OUR CUSTOMER ARE SAYING</p>
-        <span><i class="bi bi-asterisk"></i></span>
+    <section class="products-section rp">
+      <div class="section-header">
+        <h1>your gadegets store</h1>
+        <a href="./all-products.html"> View All</a>
+      </div>
+      <div class="products-cards-container">
+        <a class="product-card" href="./all-products.html">
+          <div class="top">
+            <img src="./assets/products/Layer 17.png" alt="image" />
+            <div class="white-cut fcc">
+              <div class="circle fcc">
+                <i class="icon bi bi-cart3"></i>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <p class="review">
+              <i class="icon bi bi-star-fill"></i>
+              4.5 (21K)
+            </p>
+            <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur </h1>
+            <p class="price">
+              $12.00 <span class="old-price">$13.00</span> 6% off
+            </p>
+          </div>
+        </a>
+        <a class="product-card" href="./all-products.html">
+          <div class="top">
+            <img src="./assets/products/Layer 16.png" alt="image" />
+            <div class="white-cut fcc">
+              <div class="circle fcc">
+                <i class="icon bi bi-cart3"></i>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <p class="review">
+              <i class="icon bi bi-star-fill"></i>
+              4.5 (21K)
+            </p>
+            <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur </h1>
+            <p class="price">
+              $12.00 <span class="old-price">$13.00</span> 6% off
+            </p>
+          </div>
+        </a>
+        <a class="product-card" href="./all-products.html">
+          <div class="top">
+            <img src="./assets/products/Layer 15.png" alt="image" />
+            <div class="white-cut fcc">
+              <div class="circle fcc">
+                <i class="icon bi bi-cart3"></i>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <p class="review">
+              <i class="icon bi bi-star-fill"></i>
+              4.5 (21K)
+            </p>
+            <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur </h1>
+            <p class="price">
+              $12.00 <span class="old-price">$13.00</span> 6% off
+            </p>
+          </div>
+        </a>
+        <a class="product-card" href="./all-products.html">
+          <div class="top">
+            <img src="./assets/products/Layer 14.png" alt="image" />
+            <div class="white-cut fcc">
+              <div class="circle fcc">
+                <i class="icon bi bi-cart3"></i>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <p class="review">
+              <i class="icon bi bi-star-fill"></i>
+              4.5 (21K)
+            </p>
+            <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur </h1>
+            <p class="price">
+              $12.00 <span class="old-price">$13.00</span> 6% off
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="customer rp">
+      <div class="section-header">
+        <h1>
+          WHATS OUR CUSTOMER ARE SAYING?
+          <span class="star fcc"><i class="bi bi-asterisk icon"></i></span>
+        </h1>
+        <div class="btns">
+          <button class="btn-swiper btn-swiper-left">
+            <i class="bi bi-arrow-left"></i>
+          </button>
+          <button class="btn-swiper btn-swiper-right">
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
       </div>
       <div class="cards-of-customer container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-12 col-lg-4 col-md-6 mb-3">
             <div class="card-customer">
               <p class="des">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Dolores rv
               </p>
-              <div class="buttom-card">
+              <div class="bottom-card">
                 <div class="left">
-                  <img src="./assets/products/Layer 2.png" alt="customer image" class="customer-image">
+                  <img
+                    src="./assets/products/Layer 3.png"
+                    alt="customer image"
+                    class="customer-image"
+                  />
                 </div>
                 <div class="right">
-                <h1 class="customer-name">
-                  william
-                </h1>
-                <p>Lorem ipsum dolor sit amet consectetur </p>
+                  <h1 class="customer-name">william</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-4"><div class="card-customer">
+          <div class="col-12 col-lg-4 col-md-6 mb-3">
+            <div class="card-customer">
               <p class="des">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Dolores rv
               </p>
-              <div class="buttom-card">
+              <div class="bottom-card">
                 <div class="left">
-                  <img src="./assets/products/Layer 2.png" alt="customer image" class="customer-image">
+                  <img
+                    src="./assets/products/Layer 2.png"
+                    alt="customer image"
+                    class="customer-image"
+                  />
                 </div>
                 <div class="right">
-                <h1 class="customer-name">
-                  william
-                </h1>
-                <p>Lorem ipsum dolor sit amet consectetur </p>
+                  <h1 class="customer-name">william</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div></div>
-          <div class="col-4"><div class="card-customer">
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-6 mb-3">
+            <div class="card-customer">
               <p class="des">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Dolores rv
               </p>
-              <div class="buttom-card">
+              <div class="bottom-card">
                 <div class="left">
-                  <img src="./assets/products/Layer 2.png" alt="customer image" class="customer-image">
+                  <img
+                    src="./assets/products/Layer 2.png"
+                    alt="customer image"
+                    class="customer-image"
+                  />
                 </div>
                 <div class="right">
-                <h1 class="customer-name">
-                  william
-                </h1>
-                <p>Lorem ipsum dolor sit amet consectetur </p>
+                  <h1 class="customer-name">william</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur</p>
                 </div>
               </div>
-            </div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-first-time rp">
+      <div class="deals-container">
+        <div class="deal deal-1">
+          <img src="./assets/products/Layer 14.png" alt="image" />
+        </div>
+        <div class="deal deal-2">
+          <img src="./assets/products/Layer 13.png" alt="image" />
+        </div>
+        <div class="deal deal-3">
+          <img src="./assets/products/Layer 12.png" alt="image" />
+        </div>
+        <div class="deal deal-4">
+          <img src="./assets/products/Layer 11.png" alt="image" />
+        </div>
+        <div class="deal deal-5">
+          <img src="./assets/products/Layer 10.png" alt="image" />
         </div>
       </div>
     </section>
